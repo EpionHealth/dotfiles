@@ -165,9 +165,9 @@ map <Leader>i mmgg=G`m<CR>
 syntax on
 set t_Co=256
 set background=dark
-colorscheme solarized
 
 nnoremap <leader>c<space> :NERDComToggleComment
+nnoremap \ :NERDTreeToggle<CR>
 
 set colorcolumn=80
 
