@@ -18,7 +18,7 @@ fpath=(~/.zsh/completion /usr/local/share/zsh/site-functions $fpath)
 
 # completion
 autoload -U compinit
-compinit
+compinit -u
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
