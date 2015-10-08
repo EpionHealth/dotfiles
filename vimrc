@@ -171,6 +171,7 @@ set background=dark
 
 nnoremap <leader>c<space> :NERDComToggleComment
 nnoremap \ :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
 
 set colorcolumn=80
 
@@ -204,8 +205,6 @@ nnoremap <leader><space> :noh<cr>
 
 vmap <Leader>z :call I18nTranslateString()<CR>
 vmap <Leader>dt :call I18nDisplayTranslation()<CR>
-
-map <Leader>n <Plug>:NERDTreeToggle
 
 " Local config
 if filereadable($HOME . "/.vimrc.local")
