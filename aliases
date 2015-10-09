@@ -46,7 +46,8 @@ function gopen() {
 }
 
 # Moving around
-alias epion="cd ~/dev/epion/patient-check-in"
+alias checkin="cd ~/dev/epion/patient-check-in"
+alias epion="cd ~/dev/epion"
 alias dev="cd ~/dev"
 alias desk="cd ~/Desktop"
 alias ..="cd ../"
