@@ -107,6 +107,11 @@ _load_settings "$HOME/.zsh/configs"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+# load rvm if available
+if which rvm &>/dev/null ; then
+  source ~/.rvm/scripts/rvm
+fi
+
 hitch() {
   command hitch "$@"
   if [[ -s "$HOME/.hitch_export_authors" ]] ; then
