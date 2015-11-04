@@ -67,3 +67,8 @@ alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 # Hitch
 alias unhitch='hitch -u'
+
+# tmux
+alias ta="tmux attach-session -t"
+alias tk="tmux kill-session -t"
+alias tl="tmux list-sessions"
