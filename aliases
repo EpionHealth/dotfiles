@@ -49,7 +49,7 @@ function gopen() {
 alias checkin="cd ~/dev/epion/patient-check-in"
 alias epion="cd ~/dev/epion"
 alias dotfiles="cd ~/dev/epion/dotfiles"
-alias docs="cd ~/dev/epion/check-in-documentation"
+alias docs="cd ~/dev/epion/product-documentation"
 alias laptop="cd ~/dev/epion/laptop"
 alias dev="cd ~/dev"
 alias desk="cd ~/Desktop"
