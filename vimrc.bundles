@@ -48,6 +48,7 @@ Plug 'vim-scripts/tComment'
 Plug 'mhinz/vim-signify'
 Plug 'jgdavey/tslime.vim'
 Plug 'epionhealth/vim-spec-runner'
+Plug 'despo/vim-ruby-refactoring'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
