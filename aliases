@@ -60,6 +60,7 @@ alias .....='cd ../../../../'
 
 # Miscellaneous
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias tests="rspec --exclude-pattern 'spec/features/*_spec.rb'; rspec spec/features"
 
 # Database
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
