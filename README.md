@@ -1,4 +1,4 @@
-thoughtbot dotfiles
+Epion dotfiles
 ===================
 
 Requirements
@@ -36,9 +36,7 @@ configuration options:
 * Give precedence to personal overrides which by default are placed in
   `~/dotfiles-local`
 
-You can safely run `rcup` multiple times to update:
-
-    rcup
+You can safely run `rcup` or run `rcup -d .` to update.
 
 Make your own customizations
 ----------------------------
