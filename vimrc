@@ -195,7 +195,9 @@ let g:spec_runner_dispatcher = 'call Send_to_Tmux("clear\n{command}\n")'
 let g:indentobject_meaningful_indentation = ['haml', 'sass', 'yaml', 'markdown']
 let g:indentLine_fileType = ['yaml']
 
-let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+if system("echo $TMUX | grep tmux &> /dev/null")
+  let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+endif
 
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
