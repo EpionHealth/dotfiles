@@ -190,12 +190,12 @@ map <Leader>s <Plug>RunFocusedSpec
 map <Leader>l <Plug>RunMostRecentSpec
 
 let g:Tlist_Ctags_Cmd="/usr/local/bin/ctags"
-let g:spec_runner_dispatcher = 'call Send_to_Tmux("clear\n{command}\n")'
 
 let g:indentobject_meaningful_indentation = ['haml', 'sass', 'yaml', 'markdown']
 let g:indentLine_fileType = ['yaml']
 
 if system("echo $TMUX | grep tmux &> /dev/null")
+  let g:spec_runner_dispatcher = 'call Send_to_Tmux("clear\n{command}\n")'
   let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 endif
 
