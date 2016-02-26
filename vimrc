@@ -221,4 +221,7 @@ else
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 end
 
+let g:ag_working_path_mode="r"
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+
 set shell=/bin/sh

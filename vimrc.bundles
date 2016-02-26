@@ -50,6 +50,7 @@ Plug 'jgdavey/tslime.vim'
 Plug 'epionhealth/vim-spec-runner'
 Plug 'despo/vim-ruby-refactoring'
 Plug 'Peeja/vim-cdo'
+Plug 'rking/ag.vim'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
