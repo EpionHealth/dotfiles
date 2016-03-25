@@ -15,9 +15,6 @@ alias s="rspec"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
-# Include custom aliases
-[[ -f ~/.aliases.local ]] && source ~/.aliases.local
-
 # GIT
 alias ga="git add ."
 alias git_tags="git tag -l -n1"
@@ -74,3 +71,6 @@ alias unhitch='hitch -u'
 alias ta="tmux attach-session -t"
 alias tk="tmux kill-session -t"
 alias tl="tmux list-sessions"
+
+# Include custom aliases
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
