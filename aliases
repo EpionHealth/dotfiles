@@ -58,7 +58,7 @@ alias .....='cd ../../../../'
 # Miscellaneous
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias tests="rspec --exclude-pattern 'spec/features/*_spec.rb'; rspec spec/features"
-alias translate="dotenv bundle exec i18n-tasks translate-missing --from base es"
+alias translate="i18n-tasks add-missing -v 'NEEDS_TO_BE_TRANSLATED' es"
 
 # Database
 alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
