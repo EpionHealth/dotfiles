@@ -47,6 +47,7 @@ function gopen() {
 # Moving around
 alias checkin="cd ~/dev/epion/patient-check-in"
 alias epion="cd ~/dev/epion"
+alias extension="cd ~/dev/epion/insurance-chrome-extenstion"
 alias dotfiles="cd ~/dev/epion/dotfiles"
 alias docs="cd ~/dev/epion/product-documentation"
 alias laptop="cd ~/dev/epion/laptop"
