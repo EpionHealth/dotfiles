@@ -45,6 +45,13 @@ function gopen() {
     open $giturl
 }
 
+# Show stale branches
+function stale_branches() {
+  for sha in `git branch --remote | awk '{print $1}'`; do
+    echo `git show --pretty=format:"%cn %cr" $sha | head -n 1` $sha
+  done | sort -r
+}
+
 # Moving around
 alias checkin="cd ~/dev/epion/patient-check-in"
 alias epion="cd ~/dev/epion"
