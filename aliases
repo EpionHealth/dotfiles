@@ -9,7 +9,7 @@ alias v="$VISUAL"
 alias b="bundle"
 
 # Rails
-alias extension_server="export RUN_SERVER_FOR_CHROME_EXTENSION=true; rake assets:precompile && thin start --ssl -p 7000; export RUN_SERVER_FOR_CHROME_EXTENSION=false;"
+alias extension_server="(export RUN_SERVER_FOR_CHROME_EXTENSION=true; rake assets:precompile && thin start --ssl -p 7000)"
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias s="rspec"
 
