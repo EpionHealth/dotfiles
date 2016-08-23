@@ -13,6 +13,9 @@ alias extension_server="(export RUN_SERVER_FOR_CHROME_EXTENSION=true; rake asset
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias s="rspec"
 alias epiclean="spring stop && rake db:test:prepare"
+alias rspec_extension="rspec -P 'spec/models/insurance*_spec.rb, spec/controllers/insurance_extension/*_spec.rb, spec/features/insurance_extension/*_spec.rb, spec/i18n_spec.rb'"
+alias rspec_previsit="rspec -P 'spec/models/previsit*_spec.rb, spec/controllers/previsit/*_spec.rb, spec/views/out_of_office/*_spec.rb, spec/workflows/out_of_office/*_spec.rb, spec/features/previsit/*_spec.rb, spec/i18n_spec.rb'"
+alias rspec_check_in="rspec -P 'spec/models/check_in*_spec.rb, spec/controllers/check_in/*_spec.rb, spec/features/check_in/*_spec.rb, spec/i18n_spec.rb'"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
