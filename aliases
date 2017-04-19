@@ -32,6 +32,9 @@ alias glog="git log --no-merges master.."
 alias branchage='for k in `git branch|perl -pe s/^..//`;do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k|head -n 1`\\t$k;done|sort -r'
 alias grecent='git for-each-ref --sort=-committerdate refs/heads/ --format="%(refname:short)"'
 
+# CODECLIMATE
+alias analyze="git diff --name-only master | xargs codeclimate analyze"
+
 # Open github on current branch
 function gopen() {
   giturl=$(git config --get remote.origin.url)
